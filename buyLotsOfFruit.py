@@ -28,6 +28,17 @@ def buyLotsOfFruit(orderList):
     Returns cost of order
     """
     totalCost = 0.0
+
+    #this is going to be the total cost for a fruit function
+    #want to iterate over our fruit list
+    for fruit, n in orderList:
+        #if we have the fruit in the prices
+        if fruit in fruitPrices:
+            #calculate the total cost of the fruit price per fruit we have
+            totalCost += fruitPrices[fruit]*n
+        else:
+            #otherwise the fruit is not in out list so tell user it is not here
+            print ('fruit not here!')
     
     return totalCost
 
