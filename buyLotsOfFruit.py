@@ -39,6 +39,7 @@ def buyLotsOfFruit(orderList):
         else:
             #otherwise the fruit is not in out list so tell user it is not here
             print ('fruit not here!')
+            return None
     
     return totalCost
 
